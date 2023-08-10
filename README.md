@@ -24,8 +24,8 @@ pip install -r /path/to/requirements.txt
 ### filebeat.yml
 The filebeat.yml file must be modified
 
-- Line 110 `host: "http://elk-tools.depp.in.adc.education.fr:80"`
-- Line 137 `hosts: ["elk-tools.depp.in.adc.education.fr:9200"]`
+- Line 110 `host: "http://replace.local:80"`
+- Line 137 `hosts: ["replace.local:9200"]`
 - Line 144 - 145 `username: "elastic" password: "XXXXX"` 
 
 ### add_filebeat.py
@@ -37,7 +37,7 @@ df = pd.read_csv('mdp.csv')
  ```
 - Line 20
 ```python
-scan_range = nm.scan(hosts="10.244.160.1-254",arguments='-n -sP -PE')
+scan_range = nm.scan(hosts="10.0.0.1-254",arguments='-n -sP -PE')
 ```
 - Line 30
 ```python
