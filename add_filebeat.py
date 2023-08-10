@@ -17,7 +17,7 @@ def search_password(df, host):
         return False
     
 nm = nmap.PortScanner()
-scan_range = nm.scan(hosts="10.244.160.1-254",arguments='-n -sP -PE') #Scan only hosts / no ports
+scan_range = nm.scan(hosts="10.0.0.1-254",arguments='-n -sP -PE') #Scan only hosts / no ports
 hostlist = nm.all_hosts() #array
 
 
