@@ -47,4 +47,4 @@ username = 'user'
 ## Authors and acknowledgment
 Camille VRIGNAUD
 
-test1
+test2
